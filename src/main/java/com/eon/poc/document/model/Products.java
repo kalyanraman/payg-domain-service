@@ -49,7 +49,7 @@ public class Products implements Serializable {
 	private DateTime meterBalanceDateTime;
 
 	@Field
-	private String predicatedExpiryDate;
+	private String predictedExpiryDate;
 
 	@Field
 	private String productDescription;
