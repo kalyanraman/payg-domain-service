@@ -20,6 +20,7 @@ public class Product implements Serializable {
 
 	@Id
 	private Integer productId;
+	@Field
 	private String productCode;
 	@Field
 	private String productDescription;

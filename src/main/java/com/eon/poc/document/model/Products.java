@@ -39,7 +39,7 @@ public class Products implements Serializable {
 	private Integer year;
 
 	@IdAttribute(order = 3)
-	private Integer month;
+	private String month;
 
 	@Field
 	private Double meterBalance;
