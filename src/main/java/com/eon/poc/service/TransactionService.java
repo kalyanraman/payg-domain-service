@@ -38,6 +38,8 @@ public class TransactionService {
 	public Products getTransactions(String paygProductId, String productCode, String year, String month) {
 		logger.info("TransactionService class of getTransactions method start :{}", paygProductId, productCode, year,
 				month);
+		
+		month=String.format("%2s", month).replace(" ","0"); 
 		String id = new StringBuffer(paygProductId).append("::").append(productCode).append("::").append(year)
 				.append("::").append(month).toString();
 		return transactionRepository.findById(id)
