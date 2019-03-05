@@ -2,8 +2,6 @@ package com.eon.poc.document.model;
 
 import java.io.Serializable;
 
-import org.joda.time.DateTime;
-import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.couchbase.core.mapping.Document;
 
 import com.couchbase.client.java.repository.annotation.Field;
@@ -44,8 +42,7 @@ public class Transaction implements Serializable {
 	private String notes;
 
 	@Field
-	@CreatedDate
-	private DateTime transactionDateTime;
+	private String transactionDateTime;
 
 	@Field
 	private String utrn;

@@ -4,8 +4,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.joda.time.DateTime;
-import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.couchbase.core.mapping.Document;
 import org.springframework.data.couchbase.core.mapping.id.GeneratedValue;
 import org.springframework.data.couchbase.core.mapping.id.GenerationStrategy;
@@ -45,8 +43,7 @@ public class Products implements Serializable {
 	private Double meterBalance;
 
 	@Field
-	@CreatedDate
-	private DateTime meterBalanceDateTime;
+	private String meterBalanceDateTime;
 
 	@Field
 	private String predictedExpiryDate;
